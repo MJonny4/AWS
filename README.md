@@ -25,3 +25,13 @@ Most Aws are regional: S3, EC2, RDS, Redshift
 - Apply lest privilege principle: give only the permissions needed to perform a task
 
 #### How to create an IAM User & Group
+
+- Policies attached to group or inline attached to user
+  - Version: "2012-10-17"
+  - Id: "Policy123" (optional)
+  - Statement: 
+    - Effect: "Allow" or "Deny"
+    - Action: "s3:*"
+    - Resource: "*" (all resources)
+    - Condition: {"IpAddress": {"aws:SourceIp": "
+    - Principal: {"AWS": "arn:aws:iam::123456789012:user/username"}
