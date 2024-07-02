@@ -41,3 +41,20 @@ https://instances.vantage.sh/
 - It is a good practice to maintain one separate security group for SSH access
 - One instance with 1 security can attach other security groups and allow different instances to communicate
 
+
+### Placement Groups
+- Cluster: low network latency, high network throughput
+- Spread: can span across availability zones, critical instances
+- Partition: large distributed and replicated workloads
+
+### Elastic Network Interfaces (ENI)
+- Logical component in a VPC that represents a virtual network card 
+- You can attach multiple ENIs to instances
+- Bound to a specific subnet
+- Primary ENI is created with an instance
+
+### Elastic Block Store (EBS)
+- Network drive you can attach to your instances while they run
+- Analogy: network-attached USB stick
+- Locked to an AZ
+- size in GBs, provisioned IOPS (input/output operations per second), type of EBS volume
