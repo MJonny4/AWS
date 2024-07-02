@@ -58,3 +58,6 @@ https://instances.vantage.sh/
 - Analogy: network-attached USB stick
 - Locked to an AZ
 - size in GBs, provisioned IOPS (input/output operations per second), type of EBS volume
+
+### Amazon EFS (Elastic File System)
+- Managed NFS (Network File System) that can be mounted on many EC2 instances
