@@ -61,3 +61,31 @@ https://instances.vantage.sh/
 
 ### Amazon EFS (Elastic File System)
 - Managed NFS (Network File System) that can be mounted on many EC2 instances
+
+### Vertical Scaling
+- Increase the size of the instance
+- From: t2.micro -> t2.small -> t2.medium -> t2.large
+
+### Horizontal Scaling
+- Increase the number of instances/systems handling the load
+
+### High Availability
+- Running your application in at least 2 data centers (availability zones)
+- Multi-AZ: for databases
+
+### Load Balancer
+- Distribute incoming network traffic across multiple servers
+- Health checks: check the health of the instances
+
+### Network Load Balancer (NLB)
+- High-throughput, low-latency
+- Handle millions of requests per second
+- Forward TCP traffic to your instances
+
+### Application Load Balancer (ALB)
+- Best suited for load balancing of HTTP and HTTPS traffic
+- Operates at the request level (layer 7)
+- Intelligent routing decisions based on different factors
+
+### Cross-Zone Load Balancing
+- Distribute incoming requests evenly across all instances in all AZs
